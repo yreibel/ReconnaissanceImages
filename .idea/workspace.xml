@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d8f1e88-4454-4822-82f2-3eeb1ea2eba5" name="Default Changelist" comment="Ajout d'une action pour l'enregistrement de l'image dessinée sous format (échelle de gris) de 28 par 28 pixels.&#10;Ajout d'une fonction pour le nettoyage de la zone de dessin">
+      <change afterPath="$PROJECT_DIR$/kneighbors_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele_convolutionnel.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,28 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Python.gui">
+    <configuration name="chargement_donnees" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReconnaissanceImages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Yann\PycharmProjects\ReconnaissanceImages\kneighbors_classifier.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ReconnaissanceImages" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +93,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="kneighbors_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReconnaissanceImages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kneighbors_classifier.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="modele" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ReconnaissanceImages" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modele.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ReconnaissanceImages" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +150,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Yann\PycharmProjects\ReconnaissanceImages\kneighbors_classifier.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,9 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.gui" />
+        <item itemvalue="Python.kneighbors_classifier" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.gui" />
-        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.modele" />
+        <item itemvalue="Python.chargement_donnees" />
       </list>
     </recent_temporary>
   </component>
@@ -134,6 +202,8 @@
       <workItem from="1578033805320" duration="2918000" />
       <workItem from="1578037201858" duration="300000" />
       <workItem from="1578074353579" duration="22535000" />
+      <workItem from="1578105570082" duration="235000" />
+      <workItem from="1578105814862" duration="12267000" />
     </task>
     <task id="LOCAL-00001" summary="GUI avec surface drawable fonctionnelle&#10;Création du fichier &quot;modele_convolutionnel&quot; pour la création du modèle de réseau de neurones.">
       <created>1577855439773</created>
@@ -168,10 +238,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577854168102" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578102348025">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578111437302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102348025" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578111437302" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1577854801972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,38 +254,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577855020458" />
-    <state width="1508" height="101" key="GridCell.Tab.0.bottom" timestamp="1578102188013">
+    <state width="1507" height="182" key="GridCell.Tab.0.bottom" timestamp="1578120950202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1508" height="101" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102188013" />
-    <state width="1508" height="101" key="GridCell.Tab.0.center" timestamp="1578102188013">
+    <state width="1507" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578120950202" />
+    <state width="1507" height="182" key="GridCell.Tab.0.center" timestamp="1578120950201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1508" height="101" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102188013" />
-    <state width="1508" height="101" key="GridCell.Tab.0.left" timestamp="1578102188012">
+    <state width="1507" height="182" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578120950201" />
+    <state width="1507" height="182" key="GridCell.Tab.0.left" timestamp="1578120950201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1508" height="101" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102188012" />
-    <state width="1508" height="101" key="GridCell.Tab.0.right" timestamp="1578102188013">
+    <state width="1507" height="182" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578120950201" />
+    <state width="1507" height="182" key="GridCell.Tab.0.right" timestamp="1578120950201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1508" height="101" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102188013" />
+    <state width="1507" height="182" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578120950201" />
+    <state x="720" y="241" key="RollbackChangesDialog" timestamp="1578105605508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="241" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578105605508" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1577854807126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577854807126" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578102366367">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578106434706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102366367" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578106434706" />
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578037267681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578037267681" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ReconnaissanceImages$test.coverage" NAME="test Coverage Results" MODIFIED="1578081027060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReconnaissanceImages$kneighbors_classifier.coverage" NAME="kneighbors_classifier Coverage Results" MODIFIED="1578120877167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReconnaissanceImages$chargement_donnees.coverage" NAME="chargement_donnees Coverage Results" MODIFIED="1578112267145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReconnaissanceImages$test.coverage" NAME="test Coverage Results" MODIFIED="1578119428448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ReconnaissanceCaracteres$gui.coverage" NAME="gui Coverage Results" MODIFIED="1577852813444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ReconnaissanceImages$gui.coverage" NAME="gui Coverage Results" MODIFIED="1578102188004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReconnaissanceImages$gui.coverage" NAME="gui Coverage Results" MODIFIED="1578120950193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReconnaissanceImages$modele.coverage" NAME="modele Coverage Results" MODIFIED="1578115225179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

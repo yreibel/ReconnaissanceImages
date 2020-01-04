@@ -1,10 +1,19 @@
-#Imports nécessaires
 
 from PyQt5.QtGui import QPainter, QPen, QPixmap, QBrush, QImage
 from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, \
     QDesktopWidget
 import sys
+
+import numpy as np
+import matplotlib.pyplot as plt
+import cv2
+
+def chargeImageTest():
+    imgDessin = cv2.imread("dessin.png", cv2.IMREAD_GRAYSCALE)
+    # plt.imshow(imgDessin,cmap="gray")
+    # plt.show()
+    #print(imgDessin)
 
 
 # Zone de dessin
@@ -21,7 +30,7 @@ class ZoneCanva(QWidget):
         self.isDrawing = False # si est en train de dessiner
 
         # Caractéristiques du pinceau
-        self.taillePinceau = 10
+        self.taillePinceau = 30
         self.couleurPinceau = Qt.red
 
         # Création de points pour le dessin
@@ -125,9 +134,9 @@ class GUIApp(QMainWindow):
         # On crée une modification de l'image
         self.imageModifiee = self.zoneCanva.image
         # On sauvegarde la modification de l'image en niveau de gris
-        self.imageModifiee = self.imageModifiee.convertToFormat(QImage.Format_Grayscale8)
+        #self.imageModifiee = self.imageModifiee.convertToFormat(QImage.Format_Grayscale8)
         # On applique une remise à l'échelle
-        self.imageModifiee = self.imageModifiee.scaled(28,28)
+        self.imageModifiee = self.imageModifiee.scaled(8,8)
         # On sauvegarde l'image
         self.imageModifiee.save("dessin.png")
 
@@ -144,3 +153,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = GUIApp()
     sys.exit(app.exec_())
+
+
+
