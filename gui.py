@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, \
     QDesktopWidget
 import sys
-import os
+
 
 # Zone de dessin
 class ZoneCanva(QWidget):

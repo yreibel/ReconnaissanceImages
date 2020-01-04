@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d8f1e88-4454-4822-82f2-3eeb1ea2eba5" name="Default Changelist" comment="Ajout d'une action pour l'enregistrement de l'image dessinée sous format (échelle de gris) de 28 par 28 pixels.&#10;Ajout d'une fonction pour le nettoyage de la zone de dessin">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele_convolutionnel.py" beforeDir="false" />
     </list>
@@ -134,7 +133,7 @@
       <workItem from="1578014464866" duration="11388000" />
       <workItem from="1578033805320" duration="2918000" />
       <workItem from="1578037201858" duration="300000" />
-      <workItem from="1578074353579" duration="22411000" />
+      <workItem from="1578074353579" duration="22535000" />
     </task>
     <task id="LOCAL-00001" summary="GUI avec surface drawable fonctionnelle&#10;Création du fichier &quot;modele_convolutionnel&quot; pour la création du modèle de réseau de neurones.">
       <created>1577855439773</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577855439773</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout d'une fonction évènement actionBtnDetection pour l'enregistrement de l'image dessinée sous format (échelle de gris) de 28 par 28 pixels&#10;Ajout d'une fonction évènement actionbtnClear pour le nettoyage de la zone de dessin">
+      <created>1578102349890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578102349890</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,17 +160,18 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="GUI avec surface drawable fonctionnelle&#10;Création du fichier &quot;modele_convolutionnel&quot; pour la création du modèle de réseau de neurones." />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI avec surface drawable fonctionnelle&#10;Création du fichier &quot;modele_convolutionnel&quot; pour la création du modèle de réseau de neurones." />
+    <MESSAGE value="Ajout d'une fonction évènement actionBtnDetection pour l'enregistrement de l'image dessinée sous format (échelle de gris) de 28 par 28 pixels&#10;Ajout d'une fonction évènement actionbtnClear pour le nettoyage de la zone de dessin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une fonction évènement actionBtnDetection pour l'enregistrement de l'image dessinée sous format (échelle de gris) de 28 par 28 pixels&#10;Ajout d'une fonction évènement actionbtnClear pour le nettoyage de la zone de dessin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1577854168102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577854168102" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578102251401">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578102348025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102251401" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102348025" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1577854801972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577854807126" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578037356589">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578102366367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578037356589" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578102366367" />
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578037267681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
