@@ -69,6 +69,7 @@ class ZoneCanva(QWidget):
         if event.button == Qt.LeftButton:
             self.isDrawing = False
 
+
 # Application principale
 class GUIApp(QMainWindow):
     def __init__(self):

@@ -18,6 +18,7 @@ def afficheImageDataSet(i):
     plt.imshow(digit['images'][i], cmap='Greys_r')
     plt.show()
 
+
 # Chargement des données
 digit = load_digits()
 dig = pd.DataFrame(digit['data'][0:1700])
@@ -32,7 +33,7 @@ print(train_x.shape)
 x_train,x_test,y_train,y_test=train_test_split(train_x,train_y,test_size=0.25) #0.25 pour indiquer 25% de jeu de test
 
 
-# On crée un classifier de n voisins
+# On crée un classifier de k voisins
 KNN = KNeighborsClassifier(1) # 1 classifier
 # On entraîne notre jeu de données
 KNN.fit(x_train, y_train)
@@ -44,13 +45,16 @@ print(KNN.score(x_test,y_test))
 
 imgDessin = cv2.imread("dessin.png", cv2.IMREAD_GRAYSCALE)
 afficheImageTest(imgDessin)
-# Reshape de l'image pour l'aplatir sous forme de vecteur
-imgDessin = imgDessin.reshape(1,-1)
 # On inverse les bits de couleurs (blanc et noir) pour les faire correspondre au dataset
-invert_image = cv2.bitwise_not(imgDessin)
+inversion_image = cv2.bitwise_not(imgDessin)
+afficheImageTest(inversion_image)
+# Reshape de l'image pour l'aplatir sous forme de vecteur
+inversion_image = inversion_image.reshape(1,-1)
+
+
 # Prédiction du résultat
-print("Résultat prédit", KNN.predict(invert_image))
+print("Résultat prédit", KNN.predict(inversion_image))
 
-
+afficheImageDataSet(9)
 
 
