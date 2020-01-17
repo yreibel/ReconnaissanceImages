@@ -6,14 +6,19 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QHBoxLayout,
 import sys
 
 import numpy as np
-import matplotlib.pyplot as plt
+
 import cv2
 
-def chargeImageTest():
-    imgDessin = cv2.imread("dessin.png", cv2.IMREAD_GRAYSCALE)
-    # plt.imshow(imgDessin,cmap="gray")
-    # plt.show()
-    #print(imgDessin)
+import tensorflow as tf
+
+def conformerImage(taille_image, image):
+    # On lit l'image en niveau de gris
+    imgDessin = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
+    # On inverse les bits de l'image afin de s'adapter au dataset
+    imgDessin = cv2.bitwise_not(imgDessin)
+    # On renvoie un vecteur de pixels plat
+    return imgDessin.reshape(-1,taille_image,taille_image)
+
 
 
 # Zone de dessin
@@ -43,6 +48,7 @@ class ZoneCanva(QWidget):
 
     # Action effectuée lorsque la souris est pressée
     def mousePressEvent(self, event):
+        # Vérifie que le bouton appuyé est le clic gauche de la souris
         if event.button() == Qt.LeftButton:
             self.isDrawing = True
             self.pointPrecedent = (event.pos())
@@ -75,9 +81,10 @@ class GUIApp(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        # Chargement du modèle au lancement de l'application
+        self.modele = tf.keras.models.load_model("sauvegarde_modeles/modele_ml.h5")
+
         self.title = 'Reconnaissance d\'images'
-       # self.width = 1000
-       # self.height = 500
 
         self.setWindowTitle(self.title)
         self.resize(1000,500)
@@ -137,16 +144,26 @@ class GUIApp(QMainWindow):
         # On sauvegarde la modification de l'image en niveau de gris
         #self.imageModifiee = self.imageModifiee.convertToFormat(QImage.Format_Grayscale8)
         # On applique une remise à l'échelle
-        self.imageModifiee = self.imageModifiee.scaled(8,8)
+        self.imageModifiee = self.imageModifiee.scaled(28,28)
         # On sauvegarde l'image
         self.imageModifiee.save("dessin.png")
 
+        # Prédiction du modèle préalablement chargé
+        prediction = self.modele.predict([conformerImage(28,"dessin.png")])
+        # On récupère la plus grande valeur du tableau
+        text = "Résultat : " + str(np.argmax(prediction))
+        # Affichage du résultat en mode gui
+        self.labelResultat.setText(text)
+
     # Nettoyage de la zone de dessin
     def actionBtnClear(self):
+        # On désaffiche le résultat obtenu
+        self.labelResultat.clear()
         # On remplit la zone de canva de blanc
         self.zoneCanva.image.fill(Qt.white)
         # Mise à jour de la zone de dessin
         self.zoneCanva.update()
+
 
 
 # Main
